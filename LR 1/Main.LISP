@@ -1,0 +1,5 @@
+(defun obtuse-angled (a b c)
+  (and(> (+ a b) c)(> (+ a c) b)(> (+ b c) a)
+	   (or(> (* a a) (+ (* b b) (* c c)))
+	     (> (* b b) (+ (* a a) (* c c)))
+	     (> (* c c) (+ (* a a) (* b b))))))
